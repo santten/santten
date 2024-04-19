@@ -1,0 +1,29 @@
+body {
+background-image: url("background.webp")
+}
+main {
+font-size: large;
+margin: auto;
+width: 500px;
+padding: 10px;
+height: min-content;
+box-shadow: inset 0px -3px 10px 0px rgba(9,0,181,0.56);
+border-radius: 12px;
+background-color: white;
+}
+
+a {
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    box-shadow: inset 0px -3px 10px 0px rgba(9,0,181,0.56);
+    border-radius: 12px;
+}
+
+a:hover {
+    background-color: rgba(9,0,181,0.56);
+    color: white;
+    box-shadow: inset 0px -3px 10px 0px white;
+}
+
