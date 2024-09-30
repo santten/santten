@@ -1,29 +1,86 @@
-body {
-background-image: url("background.webp")
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --dark: #06053a;
+    --light: #faf6f2;
+    --primary: #2b6c77;
+    --secondary: #495571;
+    --accent: #95bc7f;
+
+    
+    /* secondary */
+    --inset-shadow: inset 0px -2px 8px 0px #495571;
+
+    /* accent: for button hover */
+    --inset-shadow-alt: inset 0px -2px 8px 0px #95bc7f;
 }
+
+body {
+    background-color: var(--primary);
+    font-size: large;
+    font-family: "Ubuntu", Verdana, Tahoma, sans-serif;
+    color: var(--dark);
+}
+
 main {
-font-size: large;
-margin: auto;
-width: 500px;
-padding: 10px;
-height: min-content;
-box-shadow: inset 0px -3px 10px 0px rgba(9,0,181,0.56);
-border-radius: 12px;
-background-color: white;
+    box-shadow: var(--inset-shadow);
+    background-color: var(--light);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 40rem;
+    margin: 1rem auto;
+}
+
+button {
+    box-shadow: var(--inset-shadow);
+    background-color: var(--light);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 8rem;
+    text-align: center;
+    font-size: large;
+    font-family: "Ubuntu", Verdana, Tahoma, sans-serif;   
+}
+
+button:hover {
+    box-shadow: var(--inset-shadow-alt);
 }
 
 a {
-    padding: 10px;
-    background-color: white;
     text-decoration: none;
-    color: black;
-    box-shadow: inset 0px -3px 10px 0px rgba(9,0,181,0.56);
-    border-radius: 12px;
+    color: var(--dark);
 }
 
-a:hover {
-    background-color: rgba(9,0,181,0.56);
-    color: white;
-    box-shadow: inset 0px -3px 10px 0px white;
+h3 {
+    color: var(--primary);
 }
 
+h4 {
+    color: var(--secondary);
+}
+
+.project-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.project-item img {
+    max-width: 100%;
+}
+
+.project-wrapper {
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+    max-width: 92%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0;
+}
