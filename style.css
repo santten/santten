@@ -58,6 +58,7 @@ h3 {
 
 h4 {
     color: var(--secondary);
+    text-align: center;
 }
 
 .project-head {
@@ -69,13 +70,13 @@ h4 {
 }
 
 .project-item img {
-    max-width: 100%;
+    max-width: 260px;
 }
 
 .project-wrapper {
     text-align: center;
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     max-width: 92%;
     margin: 0 auto;
     justify-content: space-between;
