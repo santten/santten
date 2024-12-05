@@ -6,13 +6,6 @@
     --primary: #2b6c77;
     --secondary: #495571;
     --accent: #95bc7f;
-
-    
-    /* secondary */
-    --inset-shadow: inset 0px -2px 8px 0px #495571;
-
-    /* accent: for button hover */
-    --inset-shadow-alt: inset 0px -2px 8px 0px #95bc7f;
 }
 
 body {
@@ -32,19 +25,21 @@ main {
 }
 
 button {
-    box-shadow: var(--inset-shadow);
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: none;
-    width: 8rem;
     text-align: center;
     font-size: large;
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     font-family: "Ubuntu", Verdana, Tahoma, sans-serif;   
 }
 
 button:hover {
-    box-shadow: var(--inset-shadow-alt);
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 a {
@@ -53,11 +48,7 @@ a {
 }
 
 h3 {
-    color: var(--primary);
-}
-
-h4 {
-    color: var(--secondary);
+    color: var(--accent);
     text-align: center;
 }
 
@@ -65,12 +56,20 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
+    align-items: left;
     margin: 0.5rem 0;
 }
 
+.project-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    margin: 1rem 0;
+}
+
 .project-item img {
-    max-width: 260px;
+    width: 100%;
 }
 
 .project-wrapper {
