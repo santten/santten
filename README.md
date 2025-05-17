@@ -1,6 +1,4 @@
 SWE student from Metropolia UAS
 
-currently working on StudyShelf, a Java-based study resource sharing application 
-
-more from me at
+see more at
 https://santten.github.io/santten/
